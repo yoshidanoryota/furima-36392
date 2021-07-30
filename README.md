@@ -24,17 +24,17 @@
 
 ## itemsテーブル
 
-| Column        | Type       | Options                        |
-| ------------- | ---------- | ------------------------------ |
-| name          | string     | null: false                    |
-| price         | integer    | null: false                    |
-| introduction  | string     | null: false                    |
-| user          | references | null: false, foreign_key: true |
-| category      | string     | null: false                    |
-| status        | string     | null: false                    | 
-| postage       | string     | null: false                    |
-| area          | string     | null: false                    |
-| shipping_date | string     | null: false                    |
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| name             | string     | null: false                    |
+| price            | integer    | null: false                    |
+| introduction     | text       | null: false                    |
+| user             | references | null: false, foreign_key: true |
+| category         | integer    | null: false                    |
+| status_id        | integer    | null: false                    | 
+| postage_id       | integer    | null: false                    |
+| area_id          | integer    | null: false                    |
+| shipping_date_id | integer    | null: false                    |
 
 ### Association
 - has_one :purchase
@@ -55,6 +55,7 @@
 ### Association
 - belongs_to :item
 - has_one :address
+- belongs_to :user
 
 
 
@@ -66,11 +67,8 @@
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | purchase      | references | null: false, foreign_key: true |
-| card_number   | string     | null: false, foreign_key: true |
-| card_deadline | date       | null: false                    |
-| card_security | integer    | null: false                    |
-| zip_code      | integer    | null: false                    |
-| prefecture    | string     | null: false, foreign_key: true |
+| zip_code      | string     | null: false                    |
+| area_id       | references | null: false, foreign_key: true |
 | city          | string     | null: false                    |
 | house_number  | string     | null: false                    | 
 | building_name | string     |                                |
