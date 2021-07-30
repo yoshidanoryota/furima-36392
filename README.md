@@ -30,7 +30,7 @@
 | price            | integer    | null: false                    |
 | introduction     | text       | null: false                    |
 | user             | references | null: false, foreign_key: true |
-| category         | integer    | null: false                    |
+| category_id      | integer    | null: false                    |
 | status_id        | integer    | null: false                    | 
 | postage_id       | integer    | null: false                    |
 | area_id          | integer    | null: false                    |
@@ -68,7 +68,7 @@
 | ------------- | ---------- | ------------------------------ |
 | purchase      | references | null: false, foreign_key: true |
 | zip_code      | string     | null: false                    |
-| area_id       | references | null: false, foreign_key: true |
+| area_id       | integer    | null: false                    |
 | city          | string     | null: false                    |
 | house_number  | string     | null: false                    | 
 | building_name | string     |                                |
