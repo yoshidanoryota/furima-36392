@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="3F_ISM6DIy8l4F6vxcjU" name="ページ1">
+        <mxGraphModel dx="866" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endSize=20;endArrow=ERmany;endFill=0;curved=1;" parent="1" source="22" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;endSize=6;startSize=20;startArrow=ERone;startFill=0;" parent="1" source="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="&lt;font&gt;　&lt;font style=&quot;font-weight: bold ; font-size: 12px&quot;&gt;usersテーブル&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　&lt;br&gt;　・user_name (string型, NOT NULL)&lt;br&gt;　・first_name (string型, NOT NULL)&lt;br&gt;　・last_name (string型, NOT NULL)&lt;br&gt;　・first_name_kana (string型, NOT NULL)&lt;br&gt;　・last_name_kana (string型, NOT NULL)&lt;br&gt;　・&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;email (string型, NOT NULL)&lt;br&gt;&lt;/font&gt;　・&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;encrypted_password (string型, NOT NULL)&lt;br&gt;　・birthday (date型, NOT NULL)&lt;br&gt;　&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontFamily=Garamond;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="40" width="239" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endSize=20;endArrow=ERone;endFill=0;curved=1;" parent="1" source="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;startSize=20;startArrow=ERone;startFill=0;" parent="1" source="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="&lt;font&gt;　&lt;b&gt;items&lt;/b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;テーブル&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　&lt;br&gt;　・name (string型, NOT NULL)&lt;br&gt;　・price (integer型, NOT NULL)&lt;br&gt;　・introduction (text型, NOT NULL)&lt;br&gt;　・user (references型)&lt;br&gt;　・category_id&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&amp;nbsp;(integer型, NOT NULL)&lt;br&gt;&lt;/font&gt;　・status_id&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&amp;nbsp;(integer型, NOT NULL)&lt;br&gt;　・postage_id (integer型, NOT NULL)&lt;br&gt;　・area_id (integer型, NOT NULL)&lt;br&gt;　・shipping_date_id (integer型, NOT NULL)&lt;br&gt;　&lt;br&gt;　&lt;br&gt;　&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontFamily=Garamond;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="40" width="239" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startSize=20;endSize=20;startArrow=ERmany;startFill=0;" parent="1" source="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=none;endFill=0;startSize=20;" parent="1" source="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;startSize=20;endSize=20;" parent="1" source="33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="380" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="&lt;font&gt;　&lt;b&gt;purchases&lt;/b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;テーブル&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;&lt;/font&gt;　&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;・item (references型)&lt;br&gt;　・user (references型)&lt;br&gt;　&lt;br&gt;　&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontFamily=Garamond;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="280" width="239" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;font&gt;　&lt;b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;address&lt;/font&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;テーブル&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;&lt;/font&gt;　&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;・purchase (references型)&lt;br&gt;　・zip_code (string型, NOT NULL)&lt;br&gt;　・area_id (integer型, NOT NULL)&lt;br&gt;　・city (string型, NOT NULL)&lt;br&gt;　・house_number (string型, NOT NULL)&lt;br&gt;　・building_name (string型)&lt;br&gt;　・phone (integer型, NOT NULL)&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontFamily=Garamond;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="560" width="239" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;font style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;garamond&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42)&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　・user_name →　ユーザー名&lt;br&gt;　・first_name →　名字（漢字）&lt;br&gt;　・last_name →　名前（漢字）&lt;br&gt;　・first_name_kana →　名字（カナ）&lt;br&gt;　・last_name_kana →　名字（カナ）&lt;br&gt;　・&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;garamond&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42)&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;email →　メールアドレス&lt;br&gt;&lt;/font&gt;　・&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;garamond&amp;#34; ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; font-size: 10px&quot;&gt;encrypted_password →　パスワード&lt;br&gt;　・birthday →　生年月日&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-family: &amp;#34;garamond&amp;#34; ; font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;　・name →　商品名&lt;br&gt;　・price →　値段&lt;br&gt;　・introduction →　商品紹介文&lt;br&gt;　・user →　出品者（usersテーブル参照）&lt;br&gt;　・category_id&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-family: &amp;#34;garamond&amp;#34; ; font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&amp;nbsp;→　カテゴリー&lt;br&gt;　・status_id&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-family: &amp;#34;garamond&amp;#34;&quot;&gt;&amp;nbsp;→　商品の情報&lt;br&gt;　・postage_id →　配送料負担の有無&lt;br&gt;　・area_id →　発送元の地域&lt;br&gt;　・shipping_date_id　→　発送日の目安&lt;br&gt;&lt;br&gt;　&lt;font style=&quot;font-family: &amp;#34;garamond&amp;#34;&quot;&gt;・item →　商品情報（itemsテーブル参照）&lt;br&gt;　・user →　購入者(usersテーブル参照）&lt;br&gt;&lt;br&gt;&lt;/font&gt;　&lt;font style=&quot;font-family: &amp;#34;garamond&amp;#34;&quot;&gt;・purchase →　購入情報（purchaseテーブル参照）&lt;br&gt;　・zip_code →　郵便番号&lt;br&gt;　・area_id →　県 (itemsテーブル参照）&lt;br&gt;　・city →　市町村&lt;br&gt;　・house_number →　番地&lt;br&gt;　・building_name →　建物名&lt;br&gt;　・phone →　電話番号&lt;/font&gt;&lt;br&gt;　&lt;br&gt;　&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontFamily=Garamond;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="390" width="260" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="furima ER図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontStyle=1;fontSize=25;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="10" width="150" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
