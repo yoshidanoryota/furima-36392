@@ -35,6 +35,8 @@
 | postage_id       | integer    | null: false                    |
 | area_id          | integer    | null: false                    |
 | shipping_date_id | integer    | null: false                    |
+| image            |            |                                |
+
 
 ### Association
 - has_one :purchase
