@@ -1,5 +1,4 @@
 class Item < ApplicationRecord
-
   has_one :purchase
   belongs_to :user
   has_one_attached :image
@@ -11,11 +10,7 @@ class Item < ApplicationRecord
     validates :name, :price, :introduction, :category_id,
               :status_id, :postage_id, :area_id, :shipping_date_id, :image
     validates :category_id, :status_id, :postage_id, :area_id, :shipping_date_id,
-              numericality: { other_than: 1 , message: "can't be blank"}
-    validates_inclusion_of :price, in:300..9999999 
+              numericality: { other_than: 1, message: "can't be blank" }
+    validates_inclusion_of :price, in: 300..9_999_999
   end
-
-  
-
 end
-

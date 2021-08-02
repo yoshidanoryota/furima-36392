@@ -1,11 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Item, type: :model do
- 
   describe '商品出品機能' do
     before do
       @item = FactoryBot.build(:item)
-    end 
+    end
     context '内容に問題がない場合' do
       it '必要情報が全て存在すれば出品できる' do
         expect(@item).to be_valid
@@ -60,33 +59,28 @@ RSpec.describe Item, type: :model do
       it 'priceが299円以下だと出品できない' do
         @item.price = '299'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not included in the list")
+        expect(@item.errors.full_messages).to include('Price is not included in the list')
       end
       it 'priceが100000000円以上だと出品できない' do
         @item.price = '100000000'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not included in the list")
+        expect(@item.errors.full_messages).to include('Price is not included in the list')
       end
       it 'priceが英字だと出品できない' do
         @item.price = 'aaa'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not included in the list")
+        expect(@item.errors.full_messages).to include('Price is not included in the list')
       end
       it 'priceが全角だと出品できない' do
         @item.price = '３００'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not included in the list")
+        expect(@item.errors.full_messages).to include('Price is not included in the list')
       end
       it 'ユーザーが紐付いていなければ投稿できない' do
         @item.user = nil
         @item.valid?
         expect(@item.errors.full_messages).to include('User must exist')
       end
-
     end
-
- 
-
-
   end
 end

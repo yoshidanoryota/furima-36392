@@ -1,5 +1,4 @@
 class Category < ActiveHash::Base
-
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: 'メンズ' },
@@ -15,12 +14,7 @@ class Category < ActiveHash::Base
   ]
   include ActiveHash::Associations
   has_many :items
-
 end
 
-
-
-
-
 #---、メンズ、レディース、ベビー・キッズ、インテリア・住まい・小物、本・音楽・ゲーム、
-#おもちゃ・ホビー・グッズ、家電・スマホ・カメラ、スポーツ・レジャー、ハンドメイド、その他
+# おもちゃ・ホビー・グッズ、家電・スマホ・カメラ、スポーツ・レジャー、ハンドメイド、その他
