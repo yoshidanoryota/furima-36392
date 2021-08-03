@@ -16,7 +16,7 @@ class Item < ApplicationRecord
     validates :category_id, :status_id, :postage_id, :area_id, :shipping_date_id,
               numericality: { other_than: 1, message: "can't be blank" }
     validates_inclusion_of :price, in: 300..9_999_999
-    with_options format: { with: /\A[0-9]+\z/} do
+    with_options format: { with: /\A[0-9]+\z/ } do
       validates :price
     end
   end
