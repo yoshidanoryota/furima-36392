@@ -7,7 +7,7 @@ FactoryBot.define do
     status_id { 2 }
     postage_id { 2 }
     area_id { 2 }
-    shipping_date_id { 2 }
+    shipping_id { 2 }
     association :user
 
     after(:build) do |item|

@@ -34,7 +34,7 @@
 | status_id        | integer    | null: false                    | 
 | postage_id       | integer    | null: false                    |
 | area_id          | integer    | null: false                    |
-| shipping_date_id | integer    | null: false                    |
+| shipping_id      | integer    | null: false                    |
 | image            |            |                                |
 
 
