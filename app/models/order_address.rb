@@ -2,9 +2,10 @@ class OrderAddress
   include ActiveModel::Model
   attr_accessor :zip_code, :area_id, :city, :house_number, :building_name, :phone,
                 :item_id, :user_id
+  attr_accessor :token
 
   with_options presence: true do
-    validates :area_id, :city, :house_number, :item_id, :user_id
+    validates :area_id, :city, :house_number, :item_id, :user_id, :token
 
     validates :area_id, numericality: { other_than: 1, message: "can't be blank" }
 
@@ -24,6 +25,5 @@ class OrderAddress
   end
 end
 
-# building_nameは任意のためバリデーション不要
-#:card_number, :card_month, :card_year, :card_cvc,
-# card_number:card_number,card_month:card_month,card_year:card_year,card_cvc:card_cvc,
+# building_nameバリデーション不要
+
