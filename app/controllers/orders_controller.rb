@@ -2,7 +2,6 @@ class OrdersController < ApplicationController
   before_action :item_find
   before_action :authenticate_user!
   before_action :move_to_root
-  
 
   def index
     @order_address = OrderAddress.new
@@ -39,7 +38,6 @@ class OrdersController < ApplicationController
       currency: 'jpy'
     )
   end
-
 
   def move_to_root
     if @item.order.present?

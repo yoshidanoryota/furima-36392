@@ -57,7 +57,7 @@ RSpec.describe OrderAddress, type: :model do
         expect(@order_address.errors.full_messages).to include('Zip code is invalid')
       end
 
-      it 'zip_codeが8桁以上だと購入できない' do  # バリデーションで8桁以上は入力できないように設定済
+      it 'zip_codeが8桁以上だと購入できない' do
         @order_address.zip_code = '123-45678'
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include('Zip code is invalid')
@@ -99,7 +99,7 @@ RSpec.describe OrderAddress, type: :model do
         expect(@order_address.errors.full_messages).to include('Phone is invalid')
       end
 
-      it 'phoneが12桁以上だと購入できない' do # バリデーションで12桁以上は入力できないように設定済
+      it 'phoneが12桁以上だと購入できない' do
         @order_address.phone = '123456789100'
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include('Phone is invalid')
@@ -118,31 +118,28 @@ RSpec.describe OrderAddress, type: :model do
       end
 
       it 'phoneにハイフンがあると購入できない' do
-        @order_address.phone = '000-000-0000' # バリデーションで12桁以上は入力できないように設定済
+        @order_address.phone = '000-000-0000'
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include('Phone is invalid')
       end
 
-      it "tokenが空では購入できないこと" do
+      it 'tokenが空では購入できないこと' do
         @order_address.token = nil
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Token can't be blank")
       end
 
-      it "item_idが空では購入できないこと" do
+      it 'item_idが空では購入できないこと' do
         @order_address.item_id = nil
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("Item can't be blank")
       end
 
-      it "user_idが空では購入できないこと" do
+      it 'user_idが空では購入できないこと' do
         @order_address.user_id = nil
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include("User can't be blank")
       end
-
     end
   end
 end
-
-# bundle exec rspec spec/models/order_address_spec.rb
