@@ -1,8 +1,6 @@
 class OrderAddress
   include ActiveModel::Model
-  attr_accessor :zip_code, :area_id, :city, :house_number, :building_name, :phone,
-                :item_id, :user_id
-  attr_accessor :token
+  attr_accessor :zip_code, :area_id, :city, :house_number, :building_name, :phone, :item_id, :user_id, :token
 
   with_options presence: true do
     validates :area_id, :city, :house_number, :item_id, :user_id, :token
@@ -26,4 +24,3 @@ class OrderAddress
 end
 
 # building_nameバリデーション不要
-
