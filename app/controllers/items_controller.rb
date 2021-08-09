@@ -51,6 +51,7 @@ class ItemsController < ApplicationController
     redirect_to action: :index unless current_user.id == item.user_id
   end
 
+
   def item_find
     @item = Item.find(params[:id])
   end
